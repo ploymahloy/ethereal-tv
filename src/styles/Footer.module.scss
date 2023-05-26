@@ -1,9 +1,8 @@
-$primary-blue: rgb(1, 21, 26);
-$text-color: rgb(227, 227, 227);
+@import './colors.scss';
 
 .Footer {
-	background-color: $primary-blue;
-	color: $text-color;
+	background-color: $navy;
+	color: $primary-white;
 
 	&_logo {
 		margin: 0;
@@ -27,7 +26,7 @@ $text-color: rgb(227, 227, 227);
 	&_menu > a {
 		margin: 0 5px;
 		text-decoration: none;
-		color: $text-color;
+		color: $primary-white;
 	}
 
 	&_copyright {

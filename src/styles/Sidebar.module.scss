@@ -1,4 +1,5 @@
-$sidebar-text: rgb(227, 227, 227);
+@import './colors.scss';
+
 $sidebar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 .Sidebar {
@@ -30,16 +31,16 @@ $sidebar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 			width: 2rem;
 
 			font-size: 1.75rem;
-			color: $sidebar-text;
+			color: $primary-white;
 
-			border: 2px solid $sidebar-text;
+			border: 2px solid $primary-white;
 			border-radius: 50%;
 		}
 
 		&_username {
 			font-size: 1.5rem;
 			font-family: $sidebar-font;
-			color: $sidebar-text;
+			color: $primary-white;
 		}
 	}
 
@@ -52,7 +53,7 @@ $sidebar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 		font-size: 1rem;
 		font-weight: lighter;
 		font-family: $sidebar-font;
-		color: $sidebar-text;
+		color: $primary-white;
 		text-transform: lowercase;
 		text-decoration: none;
 	}
@@ -72,7 +73,7 @@ $sidebar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 			font-weight: lighter;
 			font-family: $sidebar-font;
-			color: $sidebar-text;
+			color: $primary-white;
 			cursor: pointer;
 
 			&_icon {
@@ -92,7 +93,7 @@ $sidebar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 		padding-top: 2rem;
 
 		font-size: 2rem;
-		color: $sidebar-text;
+		color: $primary-white;
 		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 		text-transform: lowercase;
 	}
