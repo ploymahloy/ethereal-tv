@@ -47,7 +47,7 @@ export default function Sidebar() {
 			<div className={styles.menu}>
 				{menu.map((item, index) => (
 					<a key={index} className={styles.menu_link}>
-						{item.icon}
+            <span className={styles.menu_link_icon}>{item.icon}</span>
 						<span className={styles.menu_link_text}>{item.text}</span>
 					</a>
 				))}

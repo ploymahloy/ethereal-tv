@@ -1,23 +1,22 @@
-$sidebar-text: rgb(168, 219, 231);
+$sidebar-text: rgb(227, 227, 227);
 $sidebar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 .Sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
-  box-sizing: border-box;
-	padding: 1rem;
+	box-sizing: border-box;
+	padding: 3rem 2rem;
 	width: fit-content;
 	height: 100vh;
-  
-	background-color: rgb(12, 49, 76);
+
+	background-color: rgb(1, 21, 26);
 
 	.profile {
 		display: flex;
-    justify-content: center;
+		justify-content: center;
 		align-items: center;
-
 
 		&_avatar,
 		&_username {
@@ -27,10 +26,10 @@ $sidebar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 		&_avatar {
 			padding: 0.33rem;
 			padding-left: 0.5rem;
-			height: 4rem;
-			width: 4rem;
+			height: 2rem;
+			width: 2rem;
 
-			font-size: 3.5rem;
+			font-size: 1.75rem;
 			color: $sidebar-text;
 
 			border: 2px solid $sidebar-text;
@@ -38,16 +37,17 @@ $sidebar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 		}
 
 		&_username {
-			font-size: 1.33rem;
+			font-size: 1.5rem;
 			font-family: $sidebar-font;
 			color: $sidebar-text;
 		}
 	}
 
 	.switch {
-		margin: 0.5rem 0;
 		display: flex;
 		justify-content: center;
+		margin: 0.5rem 0;
+		padding-bottom: 2rem;
 
 		font-size: 1rem;
 		font-weight: lighter;
@@ -58,33 +58,42 @@ $sidebar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	}
 
 	.menu {
-    width: 200px;
-    margin: 0 auto;
-    
-		&_link {
-      display: flex;
-			margin: 1.66rem 1.33rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 1;
+		margin: auto auto;
+		width: fit-content;
 
-			font-size: 1.33rem;
+		&_link {
+			display: flex;
+			align-items: center;
+			margin: 1rem 0;
+
 			font-weight: lighter;
 			font-family: $sidebar-font;
 			color: $sidebar-text;
-      cursor: pointer;
+			cursor: pointer;
+
+			&_icon {
+				font-size: 1.25rem;
+			}
 
 			&_text {
-				margin-left: 1rem;
+				margin-left: 0.66rem;
+				font-size: 1.5rem;
 			}
 		}
 	}
 
 	.logo {
-    display: flex;
+		display: flex;
 		justify-content: center;
-    padding-top: 4rem;
+		padding-top: 2rem;
 
 		font-size: 2rem;
 		color: $sidebar-text;
 		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-transform: lowercase;
+		text-transform: lowercase;
 	}
 }
