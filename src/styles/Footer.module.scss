@@ -1,8 +1,13 @@
 @import './colors.scss';
 
 .Footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
 	background-color: $navy;
-	color: $primary-white;
+	color: $primary-gray;
 
 	&_logo {
 		margin: 0;
@@ -20,17 +25,23 @@
 		flex-wrap: wrap;
 		margin: 0 auto;
 		width: 80%;
-    font-family: Arial, Helvetica, sans-serif;
+		font-family: Arial, Helvetica, sans-serif;
 	}
 
 	&_menu > a {
 		margin: 0 5px;
 		text-decoration: none;
+		color: $primary-gray;
+		transition: color 0.3s ease-in-out;
+	}
+
+	&_menu > a:hover {
 		color: $primary-white;
 	}
 
 	&_copyright {
 		padding: 1.25rem 0 1rem;
+    font-size: 0.66rem;
 		text-align: center;
 	}
 }
