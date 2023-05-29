@@ -1,4 +1,4 @@
-// import React from 'react';
+import { useState } from 'react';
 import { FaFire, FaGlasses, FaHandHoldingHeart, FaHome } from 'react-icons/fa';
 import { BsFillLightningChargeFill } from 'react-icons/bs';
 import { IoSettingsSharp } from 'react-icons/io5';
@@ -33,26 +33,24 @@ const menu = [
 ];
 
 export default function Sidebar() {
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const menuTextClass = isOpen ? styles.menu_link_label : styles.menu_link_hidden;
+
 	return (
-		<div className={styles.Sidebar}>
-			<div className={styles.top}>
-				<div className={styles.profile}>
-					<div className={styles.profile_avatar}>JD</div>
-					<div className={styles.profile_username}>Jane Doe</div>
-				</div>
-				<a href="#" className={styles.switch}>
-					Switch Profile
-				</a>
-			</div>
+		<div
+			className={styles.Sidebar}
+			onMouseEnter={() => setIsOpen(true)}
+			onMouseLeave={() => setIsOpen(false)}
+		>
 			<div className={styles.menu}>
 				{menu.map((item, index) => (
 					<a key={index} className={styles.menu_link}>
-            <span className={styles.menu_link_icon}>{item.icon}</span>
-						<span className={styles.menu_link_text}>{item.text}</span>
+						<span>{item.icon}</span>
+						<span className={menuTextClass}>{item.text}</span>
 					</a>
 				))}
 			</div>
-			<span className={styles.logo}>Ethereal</span>
 		</div>
 	);
 }

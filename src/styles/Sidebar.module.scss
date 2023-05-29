@@ -3,98 +3,39 @@
 $sidebar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 .Sidebar {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-	box-sizing: border-box;
-	padding: 3rem 2rem;
-	width: fit-content;
 	height: 100vh;
-
-	background-color: rgb(1, 21, 26);
-
-	.profile {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		&_avatar,
-		&_username {
-			margin: 0 0.33rem;
-		}
-
-		&_avatar {
-			padding: 0.33rem;
-			padding-left: 0.5rem;
-			height: 2rem;
-			width: 2rem;
-
-			font-size: 1.75rem;
-			color: $primary-white;
-
-			border: 2px solid $primary-white;
-			border-radius: 50%;
-		}
-
-		&_username {
-			font-size: 1.5rem;
-			font-family: $sidebar-font;
-			color: $primary-white;
-		}
-	}
-
-	.switch {
-		display: flex;
-		justify-content: center;
-		margin: 0.5rem 0;
-		padding-bottom: 2rem;
-
-		font-size: 1rem;
-		font-weight: lighter;
-		font-family: $sidebar-font;
-		color: $primary-white;
-		text-transform: lowercase;
-		text-decoration: none;
-	}
-
+	position: fixed;
+	left: 0;
+	top: 0;
+  
+	background-color: $navy;
+  
 	.menu {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		flex: 1;
-		margin: auto auto;
-		width: fit-content;
-
+    padding: 1rem;
+    
 		&_link {
-			display: flex;
-			align-items: center;
-			margin: 1rem 0;
+      display: flex;
+      margin: 1rem 0;
 
+      font-size: 1.25rem;
 			font-weight: lighter;
 			font-family: $sidebar-font;
-			color: $primary-white;
+      
+			color: $primary-gray;
+			transition: color 0.2s ease-in-out; 
 			cursor: pointer;
 
-			&_icon {
-				font-size: 1.25rem;
+      &_label {
+        margin-left: 1rem;
+      }
+      
+			&_hidden {
+        display: none;
 			}
-
-			&_text {
-				margin-left: 0.66rem;
-				font-size: 1.5rem;
+      
+			&:hover {
+				color: $primary-white;
 			}
 		}
-	}
-
-	.logo {
-		display: flex;
-		justify-content: center;
-		padding-top: 2rem;
-
-		font-size: 2rem;
-		color: $primary-white;
-		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-		text-transform: lowercase;
 	}
 }
