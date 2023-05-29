@@ -14,7 +14,7 @@ export default function Footer() {
 				<a href="#">Contact</a>
 			</div>
 			<div className={styles.Footer_copyright}>
-				&copy; Copyright 2023 Ethereal TV
+				Copyright &copy; 2023 Ethereal TV
 			</div>
 		</footer>
 	);

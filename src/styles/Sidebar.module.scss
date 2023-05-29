@@ -7,8 +7,8 @@ $sidebar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	position: fixed;
 	left: 0;
 	top: 0;
-  
-	background-color: $navy;
+  background-color: rgba(1, 21, 26, 0.7);
+  z-index: 1000;
   
 	.menu {
     padding: 1rem;
