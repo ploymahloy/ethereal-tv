@@ -3,22 +3,19 @@ import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
 import { RxDotFilled } from 'react-icons/rx';
 
 import styles from '../styles/FeaturedReleases.module.scss';
-import image from '../assets/image.jpg';
-import image2 from '../assets/image2.jpg';
-import image3 from '../assets/image3.jpg';
 
 const slides = [
 	{
-		url: image,
-		title: 'image',
+		url: "https://picsum.photos/1100/315?random=6",
+		title: 'img',
 	},
 	{
-		url: image2,
-		title: 'image2',
+		url: "https://picsum.photos/1100/315?random=7",
+		title: 'img2',
 	},
 	{
-		url: image3,
-		title: 'image3',
+		url: "https://picsum.photos/1100/315?random=8",
+		title: 'img3',
 	},
 ];
 

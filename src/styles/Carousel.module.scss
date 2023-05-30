@@ -2,7 +2,7 @@
 
 .Carousel {
 	margin-bottom: 4rem;
-	padding-left: 3.5rem;
+	padding-left: 5rem;
 
 	&_genre {
 		margin-bottom: 0.5rem;
@@ -35,14 +35,15 @@
 		max-width: 300px;
 
 		border: 2px solid $primary-gray;
-		border-radius: 10px;
+		border-radius: 4px;
 
 		scroll-snap-align: start;
+    overflow: hidden;
 	}
 
-	// &_title:hover {
-	//   cursor: pointer;
-	//   border-color: white;
-	// 	background-color: rgba(255, 255, 255, 0.3);
-	// }
+	&_title:hover {
+	  cursor: pointer;
+	  border-color: white;
+		background-color: rgba(255, 255, 255, 0.3);
+	}
 }

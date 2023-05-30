@@ -12,9 +12,9 @@ export default function Main() {
 	return (
 		<div className={styles.Main}>
 			<FeaturedReleases />
-			<Carousel title="Continue watching" />
+			<Carousel title="Continue Watching" />
 			<Carousel title="New Releases" />
-			<Carousel title="For fans of X" />
+			<Carousel title="For Fans of Stranger Things" />
 		</div>
 	);
 }
