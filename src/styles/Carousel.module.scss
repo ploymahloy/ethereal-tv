@@ -1,0 +1,48 @@
+@import './colors';
+
+.Carousel {
+	margin-bottom: 4rem;
+	padding-left: 3.5rem;
+
+	&_genre {
+		margin-bottom: 0.5rem;
+		color: white;
+		font-size: 2rem;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	&_wrapper {
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: 20%;
+
+		scroll-snap-type: inline mandatory;
+
+		overflow-x: auto;
+		overscroll-behavior-inline: contain;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+	}
+
+	&_title {
+		margin-right: 1rem;
+		height: 125px;
+		max-width: 300px;
+
+		border: 2px solid $primary-gray;
+		border-radius: 10px;
+
+		scroll-snap-align: start;
+	}
+
+	// &_title:hover {
+	//   cursor: pointer;
+	//   border-color: white;
+	// 	background-color: rgba(255, 255, 255, 0.3);
+	// }
+}
