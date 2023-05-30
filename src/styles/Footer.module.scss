@@ -1,4 +1,4 @@
-@import './colors.scss';
+@import './colors';
 
 .Footer {
 	position: relative;
@@ -6,7 +6,7 @@
 	bottom: 0;
 	width: 100%;
 	text-align: center;
-	background-color: $navy;
+	background-color: black;
 	color: $primary-gray;
 
 	&_logo {
@@ -36,7 +36,7 @@
 	}
 
 	&_menu > a:hover {
-		color: $primary-white;
+		color: white;
 	}
 
 	&_copyright {
